@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <site.iway.androidhelpers.FlowLayout
+            android:id="@+id/flow_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            app:horizontalSpacing="8dp"
+            app:lineAlignment="bottomBottom"
+            app:verticalSpacing="8dp"
+            app:enableTouchSelect=""
+            app:multipleSelectMode="">
+
+            <View
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:background="@color/red"/>
+
+            <View
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:background="@color/green"/>
+
+            <View
+                android:layout_width="40dp"
+                android:layout_height="60dp"
+                android:background="@color/blue"/>
+
+        </site.iway.androidhelpers.FlowLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/addTextView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="8dp"
+        android:text="Add View" />
+
+</LinearLayout>
