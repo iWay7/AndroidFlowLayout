@@ -19,9 +19,7 @@
             android:padding="8dp"
             app:horizontalSpacing="8dp"
             app:lineAlignment="bottomBottom"
-            app:verticalSpacing="8dp"
-            app:enableTouchSelect=""
-            app:multipleSelectMode="">
+            app:verticalSpacing="8dp">
 
             <View
                 android:layout_width="50dp"
